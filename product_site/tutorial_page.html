@@ -1,0 +1,191 @@
+<!-- Nehemiah Speaks 10/3/2026 -->
+<!-- This is my tutorial page for PickEatz where users will learn how to download apps from the appstore
+ and how to get their account set up so they can start picking food to eat with their friends/family -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            PickEatz - How To Use
+        </title>
+    </head>
+    <body>
+        <h1>
+            <!-- Placed the logo at the top of the heading so that way the text is next to it. The logo is blurry
+             from scaling it down though so that's kinda annoying -->
+            <img src="images/logo_simple.png" alt="The logo for PickEatz. Shows a burger in the middle and fingers pointing
+            at the burger, surrounding it and forming a circle border"
+            width="80"
+            height="80"/>
+            PickEatz - How To Use The App
+        </h1>
+
+        <hr>
+        <!-- Link to homepage attached to home text -->
+        <h2><a href="product_site_hp.html">HOME</a> --- FEATURES --- <a href="tutorial_page.html">HOW TO USE</a> --- FAQ --- ABOUT --- DOWNLOAD --- CONTACT</h2>
+        <hr>
+
+        <!-- Section explaining what this page is for to the user -->
+        <h3>
+        Want to learn how to use PickEatz? Look no further!
+        </h3>
+        <p>
+            We made sure that PickEatz would be as simple to use as possible, because we want to make the dining
+            experience easy and enjoyable for out users. After reading through this page anyone should be able to get
+            the hang of the app and use it's basic features without a problem. If you are still having issues with
+            understanding how the app works after the tutorial, please skip to the form at the bottom of the page.
+        </p>
+
+        <!-- A table to easily check compatibility between various software -->
+        <h3>
+            First, check if your device is compatible
+        </h3>
+        <table>
+            <tr>
+                <th scope="col">Device:</th>
+                <th scope="col">Compatibility:</th>
+            </tr>
+            <tr>
+                <td>iPhone</td>
+                <td>IOS 18 & up</td>
+            </tr>
+            <tr>
+                <td>Android Phones</td>
+                <td>Android 15 'Vanilla Ice Cream' & up</td>
+            </tr>
+            <tr>
+                <td>Texas Instruments Calculator</td>
+                <td>NOT COMPATIBLE</td>
+            </tr>
+            <tr>
+                <td>Smart Fridges</td>
+                <td>NOT COMPATIBLE (yet)</td>
+            </tr>
+        </table>
+
+        <!-- a table with youtube videos on how to use the appstore. I used a table so I could get them next to
+         eachother because I thought it would look nicer -->
+        <h3>
+            Watch these videos on how to use the app store (IOS and Android)
+        </h3>
+        <table>
+            <tr>
+                <th scope="col">For Apple Devices:</th>
+                <th scope="col">For Android Devices:</th>
+            </tr>
+            <tr>
+                <td>
+                    <iframe width="426" height="240"
+                    src="https://www.youtube.com/embed/sJhK5fgkIEM">
+                    </iframe>
+                </td>
+                <td>
+                    <iframe width="426" height="240"
+                    src="https://www.youtube.com/embed/2F-1Lj-xmmc">
+                    </iframe>
+                </td>
+            </tr>
+        </table>
+
+        <!-- a table for the visual demonstration of the app tutorial, which I used for the same reason as the videos,
+         just thought it would look better this way. I hand drew each image -->
+        <h3>
+            App Tutorial:
+        </h3>
+        <table>
+            <tr>
+                <th scope="col">Step 1:</th>
+                <th scope="col">Step 2:</th>
+                <th scope="col">Step 3:</th>
+                <th scope="col">Step 4:</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/step1.jpg" alt="Shows the user sign up screen with an email and password, followed
+                    by a continue button"
+                    width="250"
+                    height="250"
+                    />
+                </td>
+                <td>
+                    <img src="images/step2.jpg" alt="Shows the user profile screen where you can select various eating
+                    options and dietary restrictions that apply to someone"
+                    width="250"
+                    height="250"
+                    />
+                </td>
+                <td>
+                    <img src="images/step3.jpg" alt="Shows the family/group screen where you add your created profiles
+                    into a group and are able to click the DECIDE EATZ button to help pick a dish/restaurant"
+                    width="250"
+                    height="250"
+                    />
+                </td>
+                <td>
+                    <img src="images/step4.jpg" alt="Shows the results page after clicking DECIDE EATZ. Choose from various
+                    meals or restaurants that will please everyone."
+                    width="250"
+                    height="250"
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Make sure to sign up for an account with an email and password!
+                </td>
+                <td>
+                    Next, make a profile for yourself, selecting your eating preferneces and dietary restrictions.
+                </td>
+                <td>
+                    Now, make profiles for people you want to use the app with (friends/family), and create a group
+                    and name it. Then press the 'DECIDE EATZ' button.
+                </td>
+                <td>
+                    Finally, look through recipes/restaurants that cater to all the people in your group and enjoy
+                    a meal together!
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- form section for users that still may be confused on how exactly to use the app. The email and radio 
+         buttons are required, I couldn't figure out how to make the text area required too -->
+        <h4>
+            Confused? Still Have Questions?
+        </h4>
+        <p>
+            Fill out the form below with any questions or concerns you have, and we'll do our best to get back to you as
+            soon as possible with help.
+        </p>
+        <form action="tutorial_page.html">
+            <p>
+                <label>
+                    <strong>
+                        Email:
+                    </strong>
+                    <input type="email" name="email" size="15" required/>
+                </label>
+            </p>
+
+            <p>
+                <strong>
+                    Please ask any questions you might have below:
+                </strong>
+            </p>
+            <textarea name="user questions" maxlength="250">Enter questions here...</textarea>
+
+            <p>
+                <strong>
+                    Would you like to recieve emails from us about news/promotions?
+                </strong>
+                <br />
+                <input type="radio" name="promotions" value="yes" required> Yes
+                <input type="radio" name="promotions" value="no" required> No thank you
+            </p>
+
+            <input type="submit" name="question submit" value="Submit Question(s)">
+        </form>
+    </body>
+</html>
