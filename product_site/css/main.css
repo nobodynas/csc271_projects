@@ -1,0 +1,34 @@
+/* Nehemiah Speaks 10/10/2026
+This is my main css page for all my pages, its still a work in progress.
+I just set up the general things that could apply to every page for now */
+
+/* changed the color of the lines/borders */
+hr {
+    border: 1px solid #331832;
+}
+
+/* made the logo align with the text */
+h1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* set up fonts and changed the backgorund to a lavender color */
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #DED9E2;
+}
+
+/* set up links and how they react to user interactions */
+a{
+    color: blueviolet;
+    text-decoration: none;
+}
+a:visited{
+    color: indigo;
+}
+a:hover{
+    color: deeppink;
+    text-decoration: underline;
+}

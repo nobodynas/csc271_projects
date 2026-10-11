@@ -1,0 +1,20 @@
+/* this is the about page css */
+
+/* aligning all the headings to the center */
+.about-headings{
+    text-align: center;
+}
+
+/* putting all the subtext to the left or right of its image */
+.about-subsections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* centering the table and its text */
+#team-table{
+    margin: 0 auto;
+    text-align: center;
+}
