@@ -1,20 +1,44 @@
 /* this is the about page css */
 
-/* aligning all the headings to the center */
-.about-headings{
-    text-align: center;
-}
-
 /* putting all the subtext to the left or right of its image */
+/* i had copilot help me with these about classes because I
+was struggling to get the images aligned witht he text correctly*/
 .about-subsections{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding: 10px;
+    text-align: left;
+}
+
+.about-subsections img {
+    order: 1;
+    flex: 0 0 auto;
+}
+
+.about-subsections p {
+    order: 2;
+    flex: 0 1 400px;
+    max-width: 400px;
+    margin: 0;
+}
+
+#our-values p {
+    order: 1
+}
+
+#our-values img {
+    order: 2
 }
 
 /* centering the table and its text */
-#team-table{
-    margin: 0 auto;
-    text-align: center;
+#team-table {
+    background-color: #DED9E2;
+    color: black;
+}
+
+#team-table td {
+    padding: 8px;
 }

@@ -1,0 +1,159 @@
+/* Nehemiah Speaks 10/17/26 
+this is my stylesheet with general styling for all pages and different 
+sections for specific things I created to deal with specific page designs.
+I also incoorporated responsive web design at the bottom */
+
+/* changed the color of the lines/borders */
+hr {
+    border: 1px solid #331832;
+}
+
+/* set up fonts and changed the backgorund to a lavender color */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #DED9E2;
+}
+
+/* set up links and how they react to user interactions */
+a {
+    color: blueviolet;
+    text-decoration: none;
+}
+a:visited {
+    color: indigo;
+}
+a:hover {
+    color: deeppink;
+    text-decoration: underline;
+}
+
+/* HEADER classes to align the logo with the text and put the links to the right */
+.header {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #f7f2e8;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-right {
+    margin-top: 12px;
+}
+
+.header-right a {
+    font-size: 20px;
+    padding: 8px;
+}
+
+/* makes the current pages link look different */
+.header-right a.current-link,
+.header-right a.current-link:visited {
+   color: #f7f2e8;
+   background-color: #460075;
+}
+
+/* Styling for the HOME page */
+/* CARD classes for sections on the webpage*/
+.card-aligned {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card-aligned-alternate {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #460075;
+    color: #f7f2e8;
+}
+
+.card-aligned-alternate p {
+    margin: 0;
+}
+
+.card-aligned-alternate ul {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Styling for the TUTORIAL page */
+.card-aligned-alternate table {
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.card-aligned-alternate h3 {
+    margin: 0;
+}
+
+.card-aligned-alternate th {
+    text-align: center;
+}
+
+.card-aligned-alternate td {
+    padding: 0 12px;
+}
+
+.card-aligned-alternate td img {
+    display: block;
+    margin: 0 auto;
+}
+
+.card-aligned textarea {
+    width: 400px;
+    height: 150px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#radio-spacing input {
+    margin-left: 20px;
+}
+
+#video-table {
+    background-color: #DED9E2;
+    color: black;
+}
+
+#tutorial-image-table td {
+    padding: 8px 25px;
+    width: 250px;
+    text-align: center;
+}
+
+/* Responsive Web Design */
+@media(max-width: 600px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right{
+    float: none;
+  }
+ 
+  .card-aligned, .card-aligned-alternate {
+   font-size: 30px;
+   width: 100%
+  }
+ 
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
