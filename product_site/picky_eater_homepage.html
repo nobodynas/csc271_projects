@@ -7,8 +7,24 @@ information about the app and our company -->
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>PickEatz: A Meal Everyone Can Enjoy!</title>
+        <meta name="keywords" content="meal, meal planning, picky eater, dietary, food">
+        <meta name="description" content="The homepage for PickEatz, an app that helps groups of people decide on what to eat">
+        <meta property="og:title" content="PickEatz: Meal Planning Everyone Can Enjoy!">
+        <meta property="og:description" content="Find the best meal that satisfies the whole group! Try PickEatz today!">
+        <meta property="og:image" content="images/logo_cleaned.png">
+        <meta property="og:url" content="https://nehemiahspeaks.rhody.dev/csc271_projects/product_site/picky_eater_homepage.html">
+        <title>PickEatz: Meal Planning Everyone Can Enjoy!</title>
         <link href="css/true_main.css" type="text/css" rel="stylesheet">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWNQHNMCX0"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KWNQHNMCX0');
+        </script>
     </head>
     <body>
         <!-- Main heading where the logo would go as well -->
@@ -17,7 +33,7 @@ information about the app and our company -->
                 <img src="images/logo_simple.png" alt="The logo for PickEatz. Shows a burger in the middle and fingers pointing
                 at the burger, surrounding it and forming a circle border"
                 width="80"
-                height="80"/>
+                height="80">
                 <p>PickEatz</p>
             </div>
             
@@ -25,11 +41,11 @@ information about the app and our company -->
             <div class="header-right">
                 <!-- Link to homepage attached to home text -->
                 <p>
-                    <a href="product_site_hp.html" class="current-link">HOME</a>
-                    <a hred="">FEATURES</a>
+                    <a href="picky_eater_homepage.html" class="current-link">HOME</a>
+                    <a href="">FEATURES</a>
                     <a href="tutorial_page.html">HOW TO USE</a>
                     <a href="">FAQ</a>
-                    <a href="about_page.html">ABOUT</a>
+                    <a href="company_about_page.html">ABOUT</a>
                     <a href="">DOWNLOAD</a>
                     <a href="">CONTACT</a>
                 </p>
@@ -40,7 +56,7 @@ information about the app and our company -->
         
         <div>
             <div class="card-aligned">
-                <h3>What <em>Is</em> PickEatz?</h3>
+                <h1>What <em>Is</em> PickEatz?</h1>
                 <!-- Elevator pitchy paragraph about the app -->
                 <p>
                     Have you ever wanted to eat dinner with friends or family and no one can decide on what to eat? Someone is
@@ -50,6 +66,10 @@ information about the app and our company -->
                     Whether it's a restaurant or a meal at home, we <strong>will</strong> do our best to make sure you and your 
                     friends and family can enjoy a meal all together.
                 </p>
+            </div>
+
+            <div class="card-aligned">
+                <img src="images/dragonballz-eating.gif" alt="Characters from Dragon Ball Z enjoying a meal together">
             </div>
             
             <div class="card-aligned-alternate">

@@ -6,10 +6,26 @@ and how to get their account set up so they can start picking food to eat with t
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="keywords" content="meal, tutorial, app, videos, food, how to use">
+        <meta name="description" content="Learn how to use the PickEatz app to find the best meal for everyone!">
+        <meta property="og:title" content="PickEatz Tutorial Page">
+        <meta property="og:description" content="Learn how to use the PickEatz app to find the best meal for everyone!">
+        <meta property="og:image" content="images/step4.jpg">
+        <meta property="og:url" content="https://nehemiahspeaks.rhody.dev/csc271_projects/product_site/tutorial_page.html">
         <title>
-            PickEatz - How To Use
+            How To Use PickEatz
         </title>
         <link href="css/true_main.css" type="text/css" rel="stylesheet">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWNQHNMCX0"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KWNQHNMCX0');
+        </script>
     </head>
     <body>
         <div class="header">
@@ -17,7 +33,7 @@ and how to get their account set up so they can start picking food to eat with t
                 <img src="images/logo_simple.png" alt="The logo for PickEatz. Shows a burger in the middle and fingers pointing
                 at the burger, surrounding it and forming a circle border"
                 width="80"
-                height="80"/>
+                height="80">
                 <p>PickEatz</p>
             </div>
             
@@ -25,11 +41,11 @@ and how to get their account set up so they can start picking food to eat with t
             <div class="header-right">
                 <!-- Link to homepage attached to home text -->
                 <p>
-                    <a href="product_site_hp.html">HOME</a>
-                    <a hred="">FEATURES</a>
+                    <a href="picky_eater_homepage.html">HOME</a>
+                    <a href="">FEATURES</a>
                     <a href="tutorial_page.html" class="current-link">HOW TO USE</a>
                     <a href="">FAQ</a>
-                    <a href="about_page.html">ABOUT</a>
+                    <a href="company_about_page.html">ABOUT</a>
                     <a href="">DOWNLOAD</a>
                     <a href="">CONTACT</a>
                 </p>
@@ -40,9 +56,9 @@ and how to get their account set up so they can start picking food to eat with t
 
         <!-- Section explaining what this page is for to the user -->
         <div class="card-aligned">
-            <h3>
+            <h1>
                 Want to learn how to use PickEatz? Look no further!
-            </h3>
+            </h1>
             <p>
                 We made sure that PickEatz would be as simple to use as possible, because we want to make the dining
                 experience easy and enjoyable for out users. After reading through this page anyone should be able to get
@@ -85,9 +101,9 @@ and how to get their account set up so they can start picking food to eat with t
         <!-- a table with youtube videos on how to use the appstore. I used a table so I could get them next to
          eachother because I thought it would look nicer -->
         <div id="video-table" class="card-aligned-alternate">
-            <h3>
+            <h2>
                 Watch these videos on how to use the app store (IOS and Android)
-            </h3>
+            </h2>
             <table>
                 <tr>
                     <th scope="col">For Apple Devices:</th>
@@ -112,9 +128,9 @@ and how to get their account set up so they can start picking food to eat with t
         <!-- a table for the visual demonstration of the app tutorial, which I used for the same reason as the videos,
          just thought it would look better this way. I hand drew each image -->
         <div id="tutorial-image-table" class="card-aligned-alternate">
-            <h3>
+            <h2>
                 App Tutorial:
-            </h3>
+            </h2>
             <table>
                 <tr>
                     <th scope="col">Step 1:</th>
@@ -177,41 +193,47 @@ and how to get their account set up so they can start picking food to eat with t
         <!-- form section for users that still may be confused on how exactly to use the app. The email and radio 
          buttons are required, I couldn't figure out how to make the text area required too -->
         <div class="card-aligned">
-            <h4>
+            <h3>
                 Confused? Still Have Questions?
-            </h4>
+            </h3>
             <p>
                 Fill out the form below with any questions or concerns you have, and we'll do our best to get back to you as
                 soon as possible with help.
             </p>
             <form action="tutorial_page.html">
-                <p>
-                    <label>
-                        <strong>
-                            Email:
-                        </strong>
-                        <input type="email" name="email" size="15" required>
-                    </label>
-                </p>
+                <label for="email">
+                    <strong>
+                        Email:
+                    </strong>
+                </label>
+                <input type="email" name="email" size="15" required>
 
-                <p>
+                <br>
+                <br>
+
+                <label for="user questions">
                     <strong>
                         Please ask any questions you might have below:
                     </strong>
-                </p>
+                    <br>
+                    <br>
+                </label>
                 <textarea name="user questions" maxlength="250">Enter questions here...</textarea>
 
-                <p>
+                <br>
+                <br>
+
+                <label for="promotions">
                     <strong>
                         Would you like to recieve emails from us about news/promotions?
                     </strong>
+                    <br>
                     <br>
                     <div id="radio-spacing">
                         <input type="radio" name="promotions" value="yes" required> Yes
                         <input type="radio" name="promotions" value="no" required> No thank you
                     </div>
-                    
-                </p>
+                </label>
 
                 <input type="submit" name="question submit" value="Submit Question(s)">
             </form>
