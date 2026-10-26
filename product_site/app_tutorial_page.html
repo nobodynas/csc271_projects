@@ -206,34 +206,36 @@ and how to get their account set up so they can start picking food to eat with t
                         Email:
                     </strong>
                 </label>
-                <input type="email" name="email" size="15" required>
+                <input type="email" id="email" name="email" size="15" required>
 
                 <br>
                 <br>
 
-                <label for="user questions">
+                <label for="user-questions">
                     <strong>
                         Please ask any questions you might have below:
                     </strong>
                     <br>
                     <br>
                 </label>
-                <textarea name="user questions" maxlength="250">Enter questions here...</textarea>
+                <textarea id="user-questions" name="user questions" maxlength="250">Enter questions here...</textarea>
 
                 <br>
                 <br>
 
-                <label for="promotions">
+                <fieldset>
+                    <legend>
                     <strong>
                         Would you like to recieve emails from us about news/promotions?
                     </strong>
-                    <br>
-                    <br>
+                    </legend>
                     <div id="radio-spacing">
-                        <input type="radio" name="promotions" value="yes" required> Yes
-                        <input type="radio" name="promotions" value="no" required> No thank you
+                        <input type="radio" id="promotions-yes" name="promotions" value="yes" required>
+                        <label for="promotions-yes">Yes</label>
+                        <input type="radio" id="promotions-no" name="promotions" value="no" required>
+                        <label for="promotions-no">No thank you</label>
                     </div>
-                </label>
+                </fieldset>
 
                 <input type="submit" name="question submit" value="Submit Question(s)">
             </form>
