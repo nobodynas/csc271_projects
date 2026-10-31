@@ -73,9 +73,9 @@ information about the app and our company -->
             </div>
             
             <div class="card-aligned-alternate">
-                <p>
-                    <strong>Here are some of the features in the app:</strong>
-                </p>
+                <h2>
+                    Here Are Some Of The Features In The App:
+                </h2>
 
                 <!-- Unordered list with some of the features what would be implemented into the app -->
                 <ul>
@@ -87,6 +87,47 @@ information about the app and our company -->
             </div>
             
             <div class="card-aligned">
+                <h3>
+                    See How Likely It Is For Everyone To Agree On Where To Eat:
+                </h3>
+                <p>
+                    Fill out the form below with how many people you want to eat with (including yourself) and how
+                    many resaturants are nearby, and we'll give you the percent chance of you all agreeing on one place!
+                </p>
+                <form action="#" method="get">
+                    <label for="user-name">
+                        Your name:
+                    </label>
+                    <input type="text" id="user-name" name="user-name" required>
+
+                    <br>
+                    <br>
+
+                    <label for="number-of-people">
+                        Number of people eating:
+                    </label>
+                    <input type="number" class="numbers" id="number-of-people" name="number-of-people" min="1" required>
+
+                    <br>
+                    <br>
+
+                    <label for="number-of-restaurants">
+                        Number of nearby restaurants:
+                    </label>
+                    <input type="number" class="numbers" id="number-of-restaurants" name="number-of-restaurants" min="0" required>
+
+                    <br>
+                    <br>
+
+                    <input type="submit" value="CALCULATE!">
+                </form>
+
+                <p class="food_percent">
+                    You haven't calculated anything yet :(
+                </p>
+            </div>
+
+            <div class="card-aligned-alternate">
                 <!-- Links to doordash and ubereats, along with an email contact at the bottom of the paragraph -->
                 <p>
                     We hope to collaborate with certain food partners and companies like grocery stores, certain restaurants and food
@@ -100,5 +141,6 @@ information about the app and our company -->
                 </p>
             </div>
         </div>
+        <script src="js/food_calc.js"></script>
     </body>
 </html>

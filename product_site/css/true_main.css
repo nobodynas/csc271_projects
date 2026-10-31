@@ -87,6 +87,16 @@ a:hover {
     text-align: left;
 }
 
+.card-aligned-alternate a{
+    color: rgb(255, 203, 139);
+}
+.card-aligned-alternate a:visited{
+    color: rgb(200, 110, 0);
+}
+.card-aligned-alternate a:hover{
+    color: deeppink;
+}
+
 /* Styling for the TUTORIAL page */
 .card-aligned-alternate table {
     margin: 0 auto;
