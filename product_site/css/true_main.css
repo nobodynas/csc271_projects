@@ -97,6 +97,10 @@ a:hover {
     color: deeppink;
 }
 
+.food_percent {
+    white-space: pre-line;
+}
+
 /* Styling for the TUTORIAL page */
 .card-aligned-alternate table {
     margin: 0 auto;
