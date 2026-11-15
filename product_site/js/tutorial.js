@@ -39,7 +39,7 @@ for (var i = 0; i < imagesOnPage.length; i++) {
 // updates the descriptions in the table until it has seen all of them
 // I chose a WHILE loop because it continues to loop on a specific condition
 var descSeen = 0;
-while (descSeen <= 4){
+while (descSeen < 4){
     descOnPage[descSeen].textContent = tutorialDesc[descSeen];
     descSeen += 1;
 }
