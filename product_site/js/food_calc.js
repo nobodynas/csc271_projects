@@ -11,6 +11,26 @@ var agreePercent
 var form
 var finalCalculation
 
+// my percentMessage function that returns a value
+// it takes a calculated percent and returns a custom message
+function percentMessage(percent){
+    var customMessage = "";
+
+    // check the percent and if its 30% or less, say it will be hard to agree
+    if (percent <= 30) {
+            customMessage = "You're going to have a REALLY HARD time trying to get everyone to agree...";
+        }
+        // if percent is between 80% and 30%, say it will be a little hard
+        else if (percent < 80 && percent >= 30){
+            customMessage = "It might be a <em>little difficult</em> to get everyone to agree.";
+        }
+        // if percent is 80% of greater, say it will be easy to agree
+        else if (percent >= 80){
+            customMessage = "It should be pretty easy for everyone to agree!";
+        }
+    return customMessage;
+}
+
 // I asked Copilot here on how to get the information from the form after the user
 // clicks the calculate button
 form = document.getElementsByTagName("form")[0];
@@ -38,16 +58,7 @@ form.addEventListener("submit", function(event) {
     finalCalculation.textContent = userName + "'s chance of everyone agreeing on a restaurant: ";
     finalCalculation.innerHTML += "<strong>" + agreePercent + "%</strong> \n";
 
-    // check the agreePercent and if its 30% or less, say it will be hard to agree
-    if (agreePercent <= 30) {
-        finalCalculation.innerHTML += "You're going to have a REALLY HARD time trying to get everyone to agree..."
-    }
-    // if agreePercent is between 80% and 30%, say it will be a little hard
-    else if (agreePercent < 80 && agreePercent >= 30){
-        finalCalculation.innerHTML += "It might be a <em>little difficult</em> to get everyone to agree."
-    }
-    // if agreePercent is 80% of greater, say it will be easy to agree
-    else if (agreePercent >= 80){
-        finalCalculation.innerHTML += "It should be pretty easy for everyone to agree!"
-    }
+    // add custom message to be displayed to the user
+    var responseToUser = percentMessage(agreePercent);
+    finalCalculation.innerHTML += responseToUser;
 })
