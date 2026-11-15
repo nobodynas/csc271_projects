@@ -64,4 +64,5 @@ function placeImagesAndDesc (pageImageList, pageDescList, imgs, altTexts, descs)
     }
 }
 
+// call setup function
 setupTutorial();
