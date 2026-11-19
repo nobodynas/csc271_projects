@@ -194,14 +194,17 @@ and how to get their account set up so they can start picking food to eat with t
                 Fill out the form below with any questions or concerns you have, and we'll do our best to get back to you as
                 soon as possible with help.
             </p>
-            <form action="tutorial_page.html">
+            <form action="#" id="question-form">
                 <label for="email">
                     <strong>
                         Email:
                     </strong>
                 </label>
+                
                 <input type="email" id="email" name="email" size="15" required>
-
+                <br>
+                <span id="email-feedback"></span>
+                
                 <br>
                 <br>
 
@@ -212,8 +215,11 @@ and how to get their account set up so they can start picking food to eat with t
                     <br>
                     <br>
                 </label>
+                
                 <textarea id="user-questions" name="user questions" maxlength="250">Enter questions here...</textarea>
-
+                <br>
+                <span id="question-feedback"></span>
+                
                 <br>
                 <br>
 
@@ -235,5 +241,6 @@ and how to get their account set up so they can start picking food to eat with t
             </form>
         </div>
         <script src="js/tutorial.js"></script>
+        <script src="js/user_questions.js"></script>
     </body>
 </html>
