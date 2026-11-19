@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Our Favorite Music Catalog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>My Favorite Music Catalog</h1>
+        </header>
+
+        <section class="record-catalog">
+
+            <!-- Top Record (Single) -->
+            <div class="record-card single-card" data-track-id="5TxRUOsGeWeRl3xOML59Ai" onclick="playTrack('5TxRUOsGeWeRl3xOML59Ai')">
+                <div class="record-inner">
+                    <!-- TO DO: Update the image link and alt text, and artist name to your group's favorite musical artist -->
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/697a50c3fb041241f8afc385/desktop-tyler-the-creator-by-frederic-j-brown-getty-images/0x0.jpg?format=jpg&height=2162&width=1729" alt="Tyler, The Creator" class="record-image">
+                    <div class="artist-name">Tyler, The Creator</div>
+                </div>
+            </div>
+
+            <!-- Second Row (Two Records) -->
+            <div class="record-row">
+
+                <!-- TO DO: Update the data-track-id with Spotify track ID for a song from this artist -->
+                <div class="record-card" data-track-id="55F9dik04ovaRCf4Eo1IQD">
+                    <div class="record-inner">
+                        <!-- TO DO: Update the image link and alt text, and artist name to your group's favorite musical artist -->
+                        <img src="https://i.scdn.co/image/ab67616100005174c6c4f4aaf40ebee92b8a8228" alt="Leon Thomas" class="record-image">
+                        <div class="artist-name">Leon Thomas</div>
+                    </div>
+                </div>
+
+                <!-- TO DO: Update the data-track-id with Spotify track ID for a song from this artist -->
+                <div class="record-card" data-track-id="1WmBVbFmLt0w6zPP37TeCG">
+                    <div class="record-inner">
+                        <!-- TO DO: Update the image link and alt text, and artist name to your group's favorite musical artist -->
+                        <img src="https://i1.sndcdn.com/artworks-dAyzmkWIoO1rPipA-Ahq7zA-t500x500.png" alt="PinkPantheress" class="record-image">
+                        <div class="artist-name">PinkPantheress</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Row (Three Records) -->
+            <div class="record-row">
+
+                <!-- TO DO: Update the data-track-id with Spotify track ID for a song from this artist -->
+                <div class="record-card" data-track-id="2mWfVxEo4xZYDaz0v7hYrN">
+                    <div class="record-inner">
+                        <!-- TO DO: Update the image link and alt text, and artist name to EACH of your group member's favorite musical artist -->
+                        <img src="https://s3-us-west-2.amazonaws.com/onestowatch-v2/blog-body/clairo-nomad-charm144529797-1757379630.jpeg" alt="Clairo" class="record-image">
+                        <div class="artist-name">Clairo</div>
+                    </div>
+                </div>
+
+                <!-- TO DO: Update the data-track-id with Spotify track ID for a song from this artist -->
+                <div class="record-card" data-track-id="5BKKy9fIJL5uM9fz1SnqyP">
+                    <div class="record-inner">
+                        <!-- TO DO: Update the image link and alt text, and artist name to EACH of your group member's favorite musical artist -->
+                        <img src="https://i.scdn.co/image/ab67616100005174997cc9a4aec335d46c9481fd" alt="Michael Jackson" class="record-image">
+                        <div class="artist-name">Michael Jackson</div>
+                    </div>
+                </div>
+
+                <!-- TO DO: Update the data-track-id with Spotify track ID for a song from this artist -->
+                <div class="record-card" data-track-id="3GCdLUSnKSMJhs4Tj6CV3s">
+                    <div class="record-inner">
+                        <!-- TO DO: Update the image link and alt text, and artist name to EACH of your group member's favorite musical artist -->
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/kendrick-lamar-at-the-67th-grammy-awards-held-at-the-crypto-news-photo-1738959019.pjpeg?crop=1.00xw:0.667xh;0,0.0715xh&resize=640:*" alt="Kendrick Lamar" class="record-image">
+                        <div class="artist-name">Kendrick Lamar</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="spotify-player-container">
+        <!-- Spotify Embedded Player -->
+        <iframe id="spotify-player" src="https://open.spotify.com/embed/track/4vIgJAk9aUg" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        <!-- Button to close player -->
+        <button id="close-player" class="close-button" onclick="stopTrack()">X</button>
+    </div>
+
+    <!-- Included scripts to edit -->
+    <script src="js/html-event-handlers.js"></script>
+    <script src="js/traditional-dom-event-handlers.js"></script>
+    <script src="js/event-listeners.js"></script>
+
+</body>
+</html>

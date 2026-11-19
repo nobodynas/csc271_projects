@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("https://img.freepik.com/free-photo/cartoon-style-musical-notes-background_23-2151056773.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: 'Chewy';
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.record-catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.record-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.record-card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #111;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.record-card:hover {
+    transform: scale(1.2);
+}
+
+.record-card .record-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.record-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.record-card:hover .record-image {
+    opacity: 0.5;
+}
+
+.artist-name {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: none;
+}
+
+.record-card:hover .artist-name {
+    display: block;
+}
+
+.single-card {
+    width: 250px;
+    height: 250px;
+}
+
+.record-card:hover .artist-name {
+    display: block;
+}
+
+#spotify-player-container {
+    position: fixed;
+    bottom: -400px; 
+    right: 20px;
+    transition: bottom 0.5s ease-in-out;
+    z-index: 9999;
+}
+
+#spotify-player-container.visible {
+    bottom: 20px; 
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.close-button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .record-catalog {
+        gap: 20px;
+    }
+
+    .record-row {
+        gap: 20px;
+    }
+}
